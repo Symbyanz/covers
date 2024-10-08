@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Designer"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <main class="page">
+            <div class="page__wrapper">
+                <div class="page__screen screen screen-main -active" id="main">
+                    <div class="screen__content">
+                        <h1 class="screen__title screen__title-bg">МОДЕЛЬНЫЕ <br>ЧЕХЛЫ <br>И НАКИДКИ</h1>
+                        <div class="screen__blur">
+                            <div class="blur-box">
+                                <div class="blur-box__up">
+                                    <h3 class="blur-box__title">Наши</h3>
+                                    <p class="blur-box__text">изделия <br>из алькантары <br>и экокожи</p>
+                                </div>
+                                <div class="blur-box__down">
+                                    <h4 class="blur-box__subtitle">Чехлы</h4>
+                                    <p class="blur-box__text -little">Шикарный внешний вид <br>Защищает салон от
+                                        загрязнений <br>Комфортно летом, тепло зимой</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body">
+                        <div class="screen__image">
+                            <picture>
+                                <source srcset="img/bg/bg_01r2.webp" type="image/webp" media="(min-width:1199px)"
+                                    alt="">
+                                <source srcset="img/bg/bg_01.webp" type="image/webp" media="(min-width:549px)" alt="">
+                                <source srcset="img/bg/mobile/00.webp" type="image/webp" media="(max-width:549px)"
+                                    alt="">
+                                <img src="img/bg/bg_01.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen screen-properties" id="properties">
+                    <div class="screen__content">
+                        <div class="screen__half screen-half">
+                            <h2 class="screen__title">Накидки и чехлы</h2>
+                            <h3 class="screen__subtitle">премиум-класса</h3>
+                            <p class="screen__text">Изготовление накидок происходит исключительно <br> на
+                                профессиональном оборудовании, <br>с использованием материалов высокого качества.</p>
+                            <p class="screen__text">Это идеальное решение для автомобилистов, <br>которые хотят повысить
+                                уровень комфорта <br>в своем авто, а также сделать его <br>более солидным и
+                                привлекательным.
+                            </p>
+                            <div class="screen__photo mob">
+                                <img src="img/properties/ph_01.png" alt="">
+                            </div>
+                            <a href="#form" class="button -popup-link">заказать</a>
+                        </div>
+                        <div class="screen__half screen-half">
+                            <div class="screen-half__square">
+                                <h2 class="screen-half__title">EU</h2>
+                                <span class="screen-half__stick"></span>
+                                <p class="screen-half__text">Европейский стандарт, <br>материал <br>высокого качества
+                                </p>
+                            </div>
+                            <div class="screen-half__icons icons">
+                                <a class="icons__item -popup-link" href="form">
+                                    <img src="img/icons/social/vk.svg" alt="">
+                                </a>
+                                <a class="icons__item -popup-link" href="form">
+                                    <img src="img/icons/social/fb.svg" alt="">
+                                </a>
+                                <a class="icons__item -popup-link" href="form">
+                                    <img src="img/icons/social/insta.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="screen-half__image">
+                                <img src="img/properties/ph_01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body">
+                        <div class="screen__image">
+                            <img src="img/bg/bg_04.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen screen-catalog " id="catalog">
+                    <div class="screen__content -tabs">
+                        <div class="screen__subtitle">
+                            <button class="-tabs-item -active">чехлы</button>
+                            /
+                            <button class="-tabs-item">накидки</button>
+                            /
+                            <button class="-tabs-item">аксессуары</button>
+                        </div>
+
+                        <div class="screen__products slick-products products -tabs-block -covers -active">
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/01.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Серый чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/02.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Черный чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/03.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Бежевый чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/04.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Белый чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/05.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Красный чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/06.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Синий чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/07.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Шоколадный чехол</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/covers/08.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Шоколадный чехол 2</div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen__products slick-products products -tabs-block -capes">
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/01.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Передние накидки прямые<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">2490р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/02.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Задние накидки прямые<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">2790р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/03.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Полный комплект прямые<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4590р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/04.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Передние накидки широкие<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">2990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/05.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Задние накидки широкие<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price" <div class="products__price price">
+                                            <div class="price__old">6990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">3290р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image">
+                                        <img src="img/catalog/capes/06.png" alt="">
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name -little">Полный комплект широкие<br> (цвет на выбор)
+                                        </div>
+                                        <div class="products__price price" <div class="products__price price">
+                                            <div class="price__old">4990р</div>
+                                            <span> | </span>
+                                            <div class="price__new">4990р</div>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen__products slick-products products -tabs-block -accessories">
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/01/1.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/01/2.jpg" alt="">
+                                        <img src="img/catalog/accessories/01/3.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Декоративная оплетка <br>на руль </div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                Цена по акции: 490руб
+                                                <br>Цена при отдельном заказе: 890руб
+                                                <br>Материал: Экокожа
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Возможна комбинация цветов.
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/02/1.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/02/2.jpg" alt="">
+                                        <img src="img/catalog/accessories/02/3.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Подушка-косточка <br>под шею </div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                Цена: 490 руб. При заказе 2 шт. - 800 руб.
+                                                <br>Материал: Экокожа
+                                                <br>Отстрочка ромб + 200 руб. за шт. Вышивка логотипа +250руб за шт.
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Возможна комбинация цветов. Цвет ниток вышивки и ромбов любой
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/03/1.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/03/2.jpg" alt="">
+                                        <img src="img/catalog/accessories/03/3.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Декоративная подушка <br>35х35 см</div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                Цена: 490 руб. При заказе 2 шт. - 800 руб.
+                                                <br>Материал: Экокожа
+                                                <br>Отстрочка ромб + 200 руб. за шт. Вышивка логотипа +250руб за шт.
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Возможна комбинация цветов. Цвет ниток вышивки и ромбов любой
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/04/3.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/04/2.jpg" alt="">
+                                        <img src="img/catalog/accessories/04/1.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Защитная накидка <br>под детское кресло РОМБ
+                                        </div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                Защита спинки и сидения
+                                                <br>Материал: Экокожа
+                                                <br>Цена: 1200руб. При заказе 2 шт. – 2100руб
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Цвет ниток ромба любой
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/05/1.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/05/2.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Защитная накидка <br>под бустер РОМБ</div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                (только сидение)
+                                                <br>Цена: 700 руб. При заказе 2 шт. - 1000 руб.
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Цвет ниток ромба любой
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item">
+                                <div class="products__box">
+                                    <div class="products__image slick-accessories -full">
+                                        <img src="img/catalog/accessories/06/1.jpg" alt="">
+                                        <!-- <img src="img/catalog/accessories/06/2.jpg" alt="">
+                                        <img src="img/catalog/accessories/06/3.jpg" alt=""> -->
+                                    </div>
+                                    <div class="products__text-box">
+                                        <div class="products__name">Накидка для защиты <br> от ног РОМБ</div>
+                                        <div class="products__description-block">
+                                            <p class="products__description">
+                                                Материал: Экокожа
+                                                <br>Цена: 1100руб. При заказе 2 шт. – 1900руб
+                                                <br>Цвет материала: черный, белый, серый, красный, оранжевый, бежевый
+                                                <br>Цвет ниток вышивки и ромбов любой
+                                            </p>
+                                        </div>
+                                        <a href="#form" class="products__button button -popup-link">заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body">
+                        <div class="screen__image">
+                            <img src="img/bg/bg_03.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen screen-advantages" id="advantages">
+                    <div class="screen__content">
+                        <div class="screen__half screen-half -items">
+                            <h3 class="screen__title mob">Преимущества</h3>
+                            <div class="screen-half__item">
+                                <img src="img/advantages/01.jpg" alt="">
+                                <p class="mob">Расширенная гарантия 2 годя</p>
+                            </div>
+                            <div class="screen-half__item">
+                                <img src="img/advantages/02.jpg" alt="">
+                                <p class="mob">Сшиты вручную на проф. оборудованиинии</p>
+                            </div>
+                            <div class="screen-half__item">
+                                <img src="img/advantages/03.jpg" alt="">
+                                <p class="mob">Доставка по всей России без предоплаты</p>
+                            </div>
+                            <div class="screen-half__item">
+                                <img src="img/advantages/04.jpg" alt="">
+                                <p class="mob">Возможна самостоятельная установка</p>
+                            </div>
+                        </div>
+                        <div class="screen__half screen-half">
+                            <div class="screen-half__rectangle">
+                                <div class="screen-half__box">
+                                    <h2 class="screen__title">Преимущества</h2>
+                                    <h3 class="screen__subtitle -active">— Расширенная гарантия 2 годя</h3>
+                                    <h3 class="screen__subtitle">— Сшиты вручную на проф. оборудованиинии</h3>
+                                    <h3 class="screen__subtitle">— Доставка по всей России без предоплаты</h3>
+                                    <h3 class="screen__subtitle">— Возможна самостоятельная установка</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body">
+                        <div class="screen__image">
+                            <img src="img/bg/bg_04.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen screen-reviews" id="reviews">
+                    <div class="screen__content">
+                        <div class="screen__box">
+                            <h2 class="screen__title mob">Отзывы</h2>
+                            <div class="slick-reviews reviews">
+                                <div class="reviews__item">
+                                    <div class="reviews__box">
+                                        <div class="reviews__image">
+                                            <img src="img/reviews/small/00.jpg" alt="">
+                                        </div>
+                                        <div class="reviews__text-box">
+                                            <div class="reviews__name">Егор Бондаренко</div>
+                                            <div class="reviews__text">Недорогие, практичные и надежные, садятся как
+                                                влитые, не ползут, гормошкой не ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__item">
+                                    <div class="reviews__box">
+                                        <div class="reviews__image">
+                                            <img src="img/reviews/small/01.jpg" alt="">
+                                        </div>
+                                        <div class="reviews__text-box">
+                                            <div class="reviews__name">Ирина Рыбакова</div>
+                                            <div class="reviews__text">Решила "одеть" сидения в чехлы, т. к. приходится
+                                                часто возить маленьких племянников и детей ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__item">
+                                    <div class="reviews__box">
+                                        <div class="reviews__image">
+                                            <img src="img/reviews/small/02.jpg" alt="">
+                                        </div>
+                                        <div class="reviews__text-box">
+                                            <div class="reviews__name">Денис Семенов</div>
+                                            <div class="reviews__text">Быстрый заказ и доставка, хорошее качество ткани,
+                                                точные
+                                                заводские лекала под ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__item">
+                                    <div class="reviews__box">
+                                        <div class="reviews__image">
+                                            <img src="img/reviews/small/03.jpg" alt="">
+                                        </div>
+                                        <div class="reviews__text-box">
+                                            <div class="reviews__name">Мария Летченко</div>
+                                            <div class="reviews__text">Заказывала себе на машину белые чехлы, хоть они и
+                                                светлые, но я бы не сказала что они ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__item">
+                                    <div class="reviews__box">
+                                        <div class="reviews__image">
+                                            <img src="img/reviews/small/04.jpg" alt="">
+                                        </div>
+                                        <div class="reviews__text-box">
+                                            <div class="reviews__name">Михаил Шутов</div>
+                                            <div class="reviews__text">Приобрел чехлы на ниссан х-трейл. Доставка
+                                                быстрая. Оператор озвучила ...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body">
+
+                        <div class="slick-reviews2 reviews2">
+                            <div class="reviews2__item">
+                                <div class="reviews2__text">
+                                    <h3 class="screen__subtitle">Егор Бондаренко</h3>
+                                    <div class="screen__text">Недорогие, практичные и надежные, садятся как влитые, не
+                                        ползут, гормошкой не собираются. Недостатков не нашёл, чему очень рад). Мы с
+                                        женой очень довольны и вам советуем!))</div>
+                                </div>
+                                <div class="screen__image">
+                                    <picture>
+                                        <source srcset="img/reviews/00.webp" type="image/webp" media="(min-width:549px)"
+                                            alt="">
+                                        <source srcset="img/reviews/mobile/00.webp" type="image/webp"
+                                            media="(max-width:549px)" alt="">
+                                        <img src="img/reviews/00.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="reviews2__item">
+                                <div class="reviews2__text">
+                                    <h3 class="screen__subtitle">Ирина Рыбакова</h3>
+                                    <div class="screen__text">Решила "одеть" сидения в чехлы, т. к. приходится часто
+                                        возить маленьких племянников и детей подруг, и собачка у сестры есть... В общем
+                                        чехлы показали довольно неплохие результаты и до сих пор целы, что не может не
+                                        радовать! Большое спасибо =)
+                                    </div>
+                                </div>
+                                <div class="screen__image">
+                                    <picture>
+                                        <source srcset="img/reviews/01.webp" type="image/webp" media="(min-width:549px)"
+                                            alt="">
+                                        <source srcset="img/reviews/mobile/01.webp" type="image/webp"
+                                            media="(max-width:399px)" alt="">
+                                        <img src="img/reviews/01.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="reviews2__item">
+                                <div class="reviews2__text">
+                                    <h3 class="screen__subtitle">Денис Семенов</h3>
+                                    <div class="screen__text">Быстрый заказ и доставка, хорошее качество ткани, точные
+                                        заводские лекала под сидения авто, а тажке доступная цена. Покупкой остался
+                                        доволен, спасибо!)
+                                    </div>
+                                </div>
+                                <div class="screen__image">
+                                    <picture>
+                                        <source srcset="img/reviews/02.webp" type="image/webp" media="(min-width:549px)"
+                                            alt="">
+                                        <source srcset="img/reviews/mobile/02.webp" type="image/webp"
+                                            media="(max-width:399px)" alt="">
+                                        <img src="img/reviews/02.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="reviews2__item">
+                                <div class="reviews2__text">
+                                    <h3 class="screen__subtitle">Мария Летченко</h3>
+                                    <div class="screen__text">Заказывала себе на машину белые чехлы, хоть они и светлые,
+                                        но я бы не сказала что они сильно пачкаются, да и в принципе легко моются. Зимой
+                                        холодно на них садиться, а летом жарко даже несмотря на то что они светлые. Но
+                                        ведь красота требует жертв. Отличные чехлы в автомобиль!
+                                    </div>
+                                </div>
+                                <div class="screen__image">
+                                    <picture>
+                                        <source srcset="img/reviews/03.webp" type="image/webp" media="(min-width:549px)"
+                                            alt="">
+                                        <source srcset="img/reviews/mobile/03.webp" type="image/webp"
+                                            media="(max-width:399px)" alt="">
+                                        <img src="img/reviews/03.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="reviews2__item">
+                                <div class="reviews2__text">
+                                    <h3 class="screen__subtitle">Михаил Шутов</h3>
+                                    <div class="screen__text">Приобрел чехлы на ниссан х-трейл. Доставка быстрая.
+                                        Оператор озвучила целый список компаний по доставке и тут же предложила
+                                        оптимальный вариант. Так как в Курске компания не предоставляет услуг по
+                                        установке чехлов, решил одевать сам. Огромное спасибо.
+                                    </div>
+                                </div>
+                                <div class="screen__image">
+                                    <picture>
+                                        <source srcset="img/reviews/04.webp" type="image/webp" media="(min-width:549px)"
+                                            alt="">
+                                        <source srcset="img/reviews/mobile/04.webp" type="image/webp"
+                                            media="(max-width:399px)" alt="">
+                                        <img src="img/reviews/04.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen screen-contacts" id="contacts">
+                    <div class="screen__content">
+                        <div class="screen__half">
+                            <h3 class="screen__subtitle">О компании</h3>
+                            <div class="screen__text">
+                                <b>ООО "ПРИМАТЕКС"</b>
+                                <br><br>
+                                ИНН 5017116549, <br>
+                                ОГРН 1185053006313
+                            </div>
+                            <div class="screen__text">
+                                <b>Юридический адрес</b>
+                                <br><br>143582, Московская обл, город Истра, <br>
+                                улица Центральная, здание 27/2, <br> помещение 2, этаж 4
+                            </div>
+                            <div class="screen-half__icons icons">
+                                <a href="#form2" class="icons__item -popup-link">
+                                    <img src="img/icons/social/vk.svg" alt="">
+                                </a>
+                                <a href="#form2" class="icons__item -popup-link">
+                                    <img src="img/icons/social/fb.svg" alt="">
+                                </a>
+                                <a href="#form2" class="icons__item -popup-link">
+                                    <img src="img/icons/social/insta.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="screen__half">
+                            <div class="screen__text">
+                                <h3 class="screen__subtitle">Оставить заявку</h3>
+                                <form class="form" action="#">
+                                    <div class="form__item">
+                                        <label class="form__label" for="name">имя</label>
+                                        <input class="form__input" type="text" name="name" id="name"
+                                            placeholder="ваше имя" required>
+                                    </div>
+                                    <div class="form__item">
+                                        <label class="form__label" for="phone">телефон</label>
+                                        <input class="form__input" type="text" name="phone" id="phone"
+                                            placeholder="ваш телефон" required>
+                                    </div>
+                                    <br>
+                                    <button class="button form__button">отправить <span></span><button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen__body dark-bg">
+                        <div class="screen__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__pagination"></div>
+            <div class="page__scroll"></div>
+        </main>
+        @@include('_sidebar.html',{})
+    </div>
+
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
+</html>

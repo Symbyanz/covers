@@ -1,0 +1,262 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 12;
+    left: calc(-60vw - 30px);
+    width: 30vw;
+    height: 100vh;
+    box-shadow: 10px 0 9px 1px rgba(255, 255, 255, 0.1);
+    background-color: rgb(238, 238, 238);
+    padding-left: calc(6vw + 30px);
+    transition: left 0.3s ease-in-out 0s;
+    @media (max-width: $md2 + px) {
+        width: 100vw;
+        height: auto;
+        border: none;
+        padding-left: 0;
+        padding-top: 7vh;
+        left: 0;
+        top: -200vh;
+        transition: top 0.3s ease-in-out 0s;
+    }
+    @media (max-width: $md3 + px) {
+        padding-top: 5vh;
+    }
+    @media (max-width: $md4 + px) {
+        box-shadow: 10px 0 9px 1px rgba(0, 0, 0, 0.1);
+        background-color: rgb(20, 20, 20);
+        padding-top: 68px;
+    }
+    &.-active {
+        left: 0;
+        @media (max-width: $md2 + px) {
+            top: 0;
+        }
+    }
+    &__content {
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        border-left: 2px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3vw;
+        @media (max-width: $md2 + px) {
+            width: 100vw;
+            height: auto;
+            flex-direction: row;
+            padding-left: 0;
+            padding: 60px 0;
+            overflow-y: auto;
+            border-left: none;
+        }
+        @media (max-width: $md3 + px) {
+            padding: 30px 0;
+        }
+        @media (max-width: $md4 + px) {
+            padding: 0 0 30px 0;
+        }
+    }
+    &__vertival-text {
+        position: absolute;
+        bottom: 8vh;
+        left: calc(3vw + 7.5px);
+        transform: rotate(-180deg);
+        writing-mode: tb-rl;
+        span {
+            display: inline-block;
+            transform: rotate(90deg);
+            writing-mode: none;
+        }
+        @media (max-width: $md2 + px) {
+            display: none;
+        }
+    }
+    &__shadow {
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 11;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(238, 238, 238, 0.5);
+        transition: opacity 0.3s ease-in-out;
+        &.-active {
+            visibility: visible;
+            opacity: 1;
+        }
+        @media (max-width: $md4 + px) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+.sidebar-menu {
+    &__item {
+        display: block;
+        font-size: 2vw;
+        font-weight: 700;
+        line-height: 1.5;
+        color: #636363;
+        @media (max-width: $md2 + px) {
+            text-align: center;
+            font-size: 24px;
+        }
+        @media (max-width: $md3 + px) {
+            font-size: 21px;
+        }
+        @media (max-width: $md4 + px) {
+            color: #fff;
+            opacity: 0.7;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        &.-active,
+        &.-active:hover {
+            transition: all 0.3s ease 0s;
+            color: #222;
+            font-weight: 800;
+            @media (max-width: $md4 + px) {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: #7c0d0d;
+            @media (max-width: $md4 + px) {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__addings {
+        position: absolute;
+        bottom: 8vh;
+        @media (max-width: $md2 + px) {
+            position: relative;
+            bottom: auto;
+            margin-top: 20px;
+        }
+    }
+
+    &__add a {
+        color: #646464;
+        font-size: 0.8vw;
+        line-height: 1.5;
+        @media (max-width: $md2 + px) {
+            text-align: center;
+            font-size: 12px;
+        }
+        @media (max-width: $md3 + px) {
+            font-size: 11px;
+        }
+        @media (max-width: $md4 + px) {
+            color: #fff;
+            opacity: 0.7;
+        }
+        &:hover {
+            transition: all 0.3s ease 0s;
+            color: #7c0d0d;
+            @media (max-width: $md4 + px) {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.dots-menu {
+    position: absolute;
+    z-index: 10;
+    left: 4vw;
+    bottom: 7vh;
+    @media (max-width: $md3 + px) {
+        bottom: 5vh;
+    }
+    @media (max-width: $md4 + px) {
+        display: none;
+    }
+    &__links {
+        display: flex;
+    }
+    &__item {
+        width: 12px;
+        height: 12px;
+        background-color: #2b2a2a;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+        margin-right: 2.5vw;
+        @media (max-width: $md3 + px) {
+            width: 10px;
+            height: 10px;
+        }
+        &.-active,
+        &:hover {
+            background-color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+.arrows-menu {
+    position: absolute;
+    z-index: 10;
+    right: 4vw;
+    bottom: 7vh;
+    @media (max-width: $md3 + px) {
+        bottom: 5vh;
+    }
+    @media (max-width: $md4 + px) {
+        display: none;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        @media (max-width: $md3 + px) {
+            height: 80px;
+        }
+    }
+
+    &__arrow {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(42, 23, 2);
+        box-shadow: 0 0 10px rgba(42, 23, 2, 0.1);
+        transition: all 0.3s ease-in-out;
+        @media (max-width: $md3 + px) {
+            width: 34px;
+            height: 34px;
+        }
+        & img {
+            width: 20px;
+            @media (max-width: $md3 + px) {
+                width: 18px;
+            }
+        }
+        &.-lock {
+            background-color: rgb(206, 161, 115);
+            box-shadow: 0 0 10px rgba(206, 161, 115, 0.1);
+            &:hover {
+                cursor: auto;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(42, 23, 2, 0.5);
+        }
+    }
+}
